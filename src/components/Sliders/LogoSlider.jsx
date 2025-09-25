@@ -1,11 +1,11 @@
 import React from 'react'
-import arabianBusiness from "./assets/img/news-logo/arabianBusiness.svg";
-import forbes from "./assets/img/news-logo/forbesMiddleEast.svg";
-import gulfNews from "./assets/img/news-logo/gulfNews.svg";
-import khaleejTimes from "./assets/img/news-logo/khaleejTimes.svg";
-import theNational from "./assets/img/news-logo/theNational.svg";
-import zawya from "./assets/img/news-logo/zawya.svg";
-import dubaiOne from "./assets/img/news-logo/dubaiOne.svg";
+import arabianBusiness from "../../assets/img/news-logo/arabianBusiness.svg";
+import forbes from "../../assets/img/news-logo/forbesMiddleEast.svg";
+import gulfNews from "../../assets/img/news-logo/gulfNews.svg";
+import khaleejTimes from "../../assets/img/news-logo/khaleejTimes.svg";
+import theNational from "../../assets/img/news-logo/theNational.svg";
+import zawya from "../../assets/img/news-logo/zawya.svg";
+import dubaiOne from "../../assets/img/news-logo/dubaiOne.svg";
 
 function LogoSlider() {
     const logos = [

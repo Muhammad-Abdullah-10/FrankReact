@@ -1,1 +1,18 @@
 @import "tailwindcss";
+@theme {
+  --breakpoint-xs: 300px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-3xl: 1700px;
+  
+  --color-secondary: #8d7252;
+  --color-blackButton: #2D2D2C;
+
+  --font-lato: "Lato", sans-serif;
+  --font-futuraLight: "FuturaLight", sans-serif;
+  --font-futuraNormal: "FuturaNormal", sans-serif;
+  --font-futuraBold: "FuturaBold", sans-serif;
+}
