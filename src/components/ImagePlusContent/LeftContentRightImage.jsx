@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 function LeftImageRightContent() {
   return (
     <div className="wrapper-img-right my-[50px]">

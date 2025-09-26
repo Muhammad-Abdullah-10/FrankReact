@@ -6,7 +6,9 @@ import LogoSlider from './components/Sliders/LogoSlider'
 import HeroForm from './components/Hero/HeroForm'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer';
-import LeftImageRightContent from './components/ImagePlusContent/LeftImageRightContent';
+import LeftImageRightContent from './components/ImagePlusContent/LeftContentRightImage';
+import RightContentLeftImage from './components/ImagePlusContent/RightContentLeftImage';
+
 
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
       <HeroForm />
       <LogoSlider />
       <LeftImageRightContent />
+      <RightContentLeftImage />
       <Footer />
     </>
     
