@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import '../../custom.css'
-import Logo from "../../../public/frankporter_logo_black.svg"
 
 function Header() {
     const menuItems = [
@@ -52,7 +51,7 @@ function Header() {
     <!-- Main Menu --> */}
     <div className="main-wrapper w-full flex flex-row justify-between items-center p-[10px] lg:py-[15px]">
     <a href="index.html" className="logo-wrapper w-auto sm:w-1/5 lg:px-[20px]">
-        <img className="object-cover sm:w-100 xs:max-w-[180px] min-w-[180px] " src={Logo} alt="" />
+        <img className="object-cover sm:w-100 xs:max-w-[180px] min-w-[180px] " src="/frankporter_logo_black.svg" alt="" />
     </a>
     <a href="#" className="lang-wrapper p-[2px] text-xs text-secondary border-[0.5px] rounded-[5px] text-center font-lato font-bold border-[#8d7252] block sm:hidden w-auto mr-[10px]">
         AR

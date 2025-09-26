@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from "../../../public/logo_FP-white-ex_px35.svg"
+// import Logo from "../../../public"
 
 function Footer() {
     const menuItems1 = [
@@ -20,9 +20,9 @@ function Footer() {
         { key: "estimate", label: "Estimate Revenue", href: "#" },
     ];
   return (
-    <footer className="footer-wrapper flex flex-col lg:flex-row px-[5%] pt-[5%] pb-[3%] bg-blackButton">
-    <div className="footer-col-1 w-full lg:w-2/5 2xl:max-w-4/5 2xl:mx-auto flex flex-col px-[20px] lg:px-[10px]">
-        <img src={Logo} alt="" className="object-cover w-full  2xl:max-w-[70%] mb-[20px]" />
+    <footer className="footer-wrapper flex flex-col items-baseline lg:flex-row px-[5%] pt-[5%] pb-[3%] bg-blackButton">
+    <div className="footer-col-1 w-full lg:w-2/5 2xl:max-w-4/5 2xl:mx-auto flex flex-col px-[20px] lg:pl-2.5 lg:pr-12">
+        <img src="/logo_FP-white.svg" alt="" className="object-cover w-full  2xl:max-w-[70%] mb-[20px]" />
         <p className="font-futuraLight text-[16px] xl:text-[20px] text-wrap text-white leading-[1.1] 2xl:max-w-[75%]">
         Frank Porter world-className Airbnb management services, takes the hassle out of renting out your property on Airbnb and similar platforms, so you can sit back, relax and count your dirhams
         </p>
@@ -71,7 +71,7 @@ function Footer() {
                 </a>
             ))}
     </div>
-    <div className="footer-col-2 w-full lg:w-[20%] flex flex-col px-[20px] lg:px-[10px] mt-[20px] lg:mt-0"> 
+    <div className="footer-col-2 w-full lg:w-1/4 flex flex-col px-[20px] lg:px-[10px] mt-[20px] lg:mt-0"> 
         <h3 className="text-[24px] lg:text-[30px] xl:text-[40px] font-futuraLight text-white underline lg:no-underline pb-[5px]">More about us</h3>
             {menuItems2.map((item) => (
                 <a
