@@ -2,6 +2,23 @@ import React from 'react'
 import Logo from "../../../public/logo_FP-white-ex_px35.svg"
 
 function Footer() {
+    const menuItems1 = [
+        { key: "owner-app", label: "Owner App", href: "#" },
+        { key: "services", label: "Services", href: "#" },
+        { key: "pricing", label: "Pricing", href: "#" },
+        { key: "gallery", label: "Gallery", href: "#" },
+        { key: "about", label: "About Us", href: "#" },
+        { key: "estimate", label: "Estimate Revenue", href: "#" },
+    ];
+    const menuItems2 = [
+        { key: "media", label: "Media", href: "#" },
+        { key: "blog", label: "Blog", href: "#" },
+        { key: "retirement", label: "Retirement Visa UAE", href: "#" },
+        { key: "videos", label: "Videos", href: "#" },
+        { key: "pricing", label: "Pricing", href: "#" },
+        { key: "about", label: "About Us", href: "#" },
+        { key: "estimate", label: "Estimate Revenue", href: "#" },
+    ];
   return (
     <footer className="footer-wrapper flex flex-col lg:flex-row px-[5%] pt-[5%] pb-[3%] bg-blackButton">
     <div className="footer-col-1 w-full lg:w-2/5 2xl:max-w-4/5 2xl:mx-auto flex flex-col px-[20px] lg:px-[10px]">
@@ -13,7 +30,7 @@ function Footer() {
         Subscribe
         </h3>
     <div className="flex flex-row justify-between">
-      <form className="flex flex-row justify-between w-full 2xl:max-w-[75%]" action="">
+      <form className="flex flex-row justify-between w-full 2xl:max-w-3/4" action="">
         <input className="w-[70%] rounded mr-[10px] h-[50px] placeholder:text-gray-600 pl-[20px] focus-within:outline-[#8d7252] focus-within:border-0 placeholder:text-[18px] text-[18px]" type="email" name="email" placeholder="E-mail" id="" />
         <button type="submit" className="bg-secondary w-[30%] h-[50px] font-futuraLight text-white font-bold text-[18px] rounded-[5px]
         text-center uppercase  border-[#2D2D2C] border-[2px] border-solid tracking-wide hover:border-solid hover:border-[1px]
@@ -29,7 +46,7 @@ function Footer() {
       All rights reserved.
     </p>
     </div>
-    <div className="footer-col-2 w-full lg:w-[20%] flex flex-col px-[20px] lg:px-[10px] mt-[20px] lg:mt-0"> 
+    <div className="footer-col-2 w-full lg:w-[25%] flex flex-col px-[20px] lg:px-[10px] mt-[20px] lg:mt-0"> 
         <h3 className="text-[24px] lg:text-[30px] xl:text-[40px] font-futuraLight text-white underline lg:underline-offset-0 pb-[5px]  lg:no-underline">Contact</h3>
         <a href="#" className="text-[18px] font-futuraLight font-[400] hover:font-[600] text-white mt-[10px]">
         + 971 4 427 8193
@@ -44,23 +61,27 @@ function Footer() {
     </div>
     <div className="footer-col-2 w-full lg:w-[20%] flex flex-col px-[20px] lg:px-[10px] mt-[20px] lg:mt-0 justify-self-center 2xl:pl-[100px]"> 
         <h3 className="text-[24px] lg:text-[30px] xl:text-[40px] font-futuraLight text-white underline lg:no-underline pb-[5px]">Main</h3>
-        <a href="#" className="text-[18px] font-futuraLight font-[400] hover:font-[600] text-white capitalize">Owner App </a>
-        <a href="#" className="text-[18px] font-futuraLight font-[400] hover:font-[600] text-white capitalize">services </a>
-        <a href="#" className="text-[18px] font-futuraLight font-[400] hover:font-[600] text-white capitalize">pricing </a>
-        <a href="#" className="text-[18px] font-futuraLight font-[400] hover:font-[600] text-white capitalize">gallery </a>
-        <a href="#" className="text-[18px] font-futuraLight font-[400] hover:font-[600] text-white capitalize">pricing
-        about us </a>
-        <a href="#" className="text-[18px] font-futuraLight font-[400] hover:font-[600] text-white capitalize">estimate revenue </a>
+              {menuItems1.map((item) => (
+                <a
+                key={item.key}
+                href={item.href}
+                className="text-[18px] font-futuraLight font-[400] hover:font-[600] text-white capitalize"
+                >
+                {item.label}
+                </a>
+            ))}
     </div>
     <div className="footer-col-2 w-full lg:w-[20%] flex flex-col px-[20px] lg:px-[10px] mt-[20px] lg:mt-0"> 
         <h3 className="text-[24px] lg:text-[30px] xl:text-[40px] font-futuraLight text-white underline lg:no-underline pb-[5px]">More about us</h3>
-        <a href="#" className="text-[18px] font-futuraLight font-[400] hover:font-[600] text-white capitalize">media </a>
-        <a href="#" className="text-[18px] font-futuraLight font-[400] hover:font-[600] text-white capitalize">blog </a>
-        <a href="#" className="text-[18px] font-futuraLight font-[400] hover:font-[600] text-white capitalize">retirement Visa UAE </a>
-        <a href="#" className="text-[18px] font-futuraLight font-[400] hover:font-[600] text-white capitalize">videos </a>
-        <a href="#" className="text-[18px] font-futuraLight font-[400] hover:font-[600] text-white capitalize">pricing
-        about us </a>
-        <a href="#" className="text-[18px] font-futuraLight font-[400] hover:font-[600] text-white capitalize">estimate revenue </a>
+            {menuItems2.map((item) => (
+                <a
+                key={item.key}
+                href={item.href}
+                className="text-[18px] font-futuraLight font-[400] hover:font-[600] text-white capitalize"
+                >
+                {item.label}
+                </a>
+            ))}
     </div>
     </footer>
   )
