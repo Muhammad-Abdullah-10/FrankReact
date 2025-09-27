@@ -13,10 +13,10 @@ function HeroSlider() {
         <Swiper 
         modules={[Pagination]}
         slidesPerView={1}
-        
+        pagination={{ clickable: true }}
         >
           <SwiperSlide className="swiper-slide">
-            <div className="wrapper-slide" style={{background: "url('../src/assets/img/FrankPorter_main_baner_1.jpeg')", backgroundSize: "contain"}}>
+            <div className="wrapper-slide" style={{background: "url('../src/assets/img/FrankPorter_main_baner_1.jpeg')", backgroundSize: "cover"}}>
               <div className="slide-data">
                   <h2 className="heading-wrapper font-futuraNormal">Airbnb
                     Management Dubai</h2>
@@ -43,7 +43,7 @@ function HeroSlider() {
           
           
           <SwiperSlide className="swiper-slide">
-            <div className="wrapper-slide" style={{background: "url('../src/assets/img/FrankPorter_main_baner_2.jpeg')", backgroundSize: "contain"}}>
+            <div className="wrapper-slide" style={{background: "url('../src/assets/img/FrankPorter_main_baner_2.jpeg')", backgroundSize: "cover"}}>
               <div className="slide-data">
                   <h2 className="heading-wrapper font-futuraNormal">Airbnb
                     Management Dubai</h2>
@@ -70,7 +70,7 @@ function HeroSlider() {
           
           
           <SwiperSlide className="swiper-slide">
-            <div className="wrapper-slide" style={{background: "url('../src/assets/img/FrankPorter_main_baner_3.jpeg')", backgroundSize: "contain"}}>
+            <div className="wrapper-slide" style={{background: "url('../src/assets/img/FrankPorter_main_baner_3.jpeg')", backgroundSize: "cover"}}>
               <div className="slide-data">
                   <h2 className="heading-wrapper font-futuraNormal">Airbnb
                     Management Dubai</h2>

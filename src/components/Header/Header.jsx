@@ -95,8 +95,8 @@ function Header() {
           <a href="#" className="text-sm text-white px-[5px] font-lato">
             +921 4 442 4487
           </a>
-          <a href="#" className="text-sm text-white px-[10px] font-lato">
-            <i className="fa fa-instagram" aria-hidden="true"></i>
+          <a href="#" className="text-[20px] text-white px-[10px] font-lato w-[20px] h-[20px]">
+            <i className="fa fa-instagram text-[20px] w-[20px] h-[20px]" aria-hidden="true"></i>
           </a>
         </div>
       </div>
