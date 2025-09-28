@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {
     setLeftData(homeDataContent.leftSections);
     setRightData(homeDataContent.rightSections);
-  }, []);
+  }, [homeDataContent]);
   // console.log(leftData);    
   // console.log(rightData); 
   return (
@@ -31,10 +31,16 @@ function App() {
       <HeroForm />
       <LogoSlider />
       <LeftImageRightContent
-      key={leftData[0].id} title={leftData[0].title} text={leftData[0].text} imgUrl={leftData[0].imgUrl}/>
-      <RightContentLeftImage />
-       <LeftImageRightContent
-      key={leftData[1].id} title={leftData[1].title} text={leftData[1].text} imgUrl={leftData[1].imgUrl}/>
+      key={leftData[0]?.id} title={leftData[0]?.title} text={leftData[0]?.text} imgUrl={leftData[0]?.imgUrl}/>
+      <RightContentLeftImage 
+      key={rightData[0]?.id} title={rightData[0]?.title} text={rightData[0]?.text} imgUrl={rightData[0]?.imgUrl} />
+      <LeftImageRightContent
+      key={leftData[1]?.id} title={leftData[1]?.title} text={leftData[1]?.text} imgUrl={leftData[1]?.imgUrl}/>
+     
+      <RightContentLeftImage 
+      key={rightData[1]?.id} title={rightData[1]?.title} text={rightData[1]?.text} imgUrl={rightData[1]?.imgUrl} />
+      <RightContentLeftImage 
+      key={rightData[2]?.id} title={rightData[2]?.title} text={rightData[2]?.text} imgUrl={rightData[2]?.imgUrl} />
       <Footer />
     </>
     
