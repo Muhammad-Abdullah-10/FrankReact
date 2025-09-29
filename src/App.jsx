@@ -12,6 +12,7 @@ import RightContentLeftImage from "./components/ImagePlusContent/RightContentLef
 import HeroSlider from "./components/Hero/HeroSlider";
 import homePageData from "../public/homePageData";
 import HowItWorks from "./components/Elements/HowItWorks";
+import ManagementSupport from "./components/Elements/ManagementSupport";
 
 function App() {
   // console.log(homePageData.dataImageContent);
@@ -48,6 +49,7 @@ function App() {
         text={leftData[1]?.text}
         imgUrl={leftData[1]?.imgUrl}
       />
+      <ManagementSupport />
       <HowItWorks />
 
       <RightContentLeftImage
