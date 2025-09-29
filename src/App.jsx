@@ -18,13 +18,16 @@ function App() {
   // console.log(homePageData.dataImageContent);
   const [leftData, setLeftData] = useState([]);
   const [rightData, setRightData] = useState([]);
+  const [managementSection ,setManagementSection] = useState({});
   const homeDataContent = homePageData.dataImageContent;
+
   useEffect(() => {
     setLeftData(homeDataContent.leftSections);
     setRightData(homeDataContent.rightSections);
+    setManagementSection(homePageData.managementSection);
   }, [homeDataContent]);
-  // console.log(leftData);
-  // console.log(rightData);
+
+  
   return (
     <>
       <Header />
@@ -49,7 +52,7 @@ function App() {
         text={leftData[1]?.text}
         imgUrl={leftData[1]?.imgUrl}
       />
-      <ManagementSupport />
+      <ManagementSupport title={managementSection.title} steps={managementSection.steps} />
       <HowItWorks />
 
       <RightContentLeftImage

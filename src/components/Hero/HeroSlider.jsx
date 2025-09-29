@@ -16,12 +16,7 @@ useEffect(() => {
     setSlidesData(homePageData.heroSection.slides); 
   }
 }, [homePageData]);
-
-// console.log("data:", typeof data);          
-// console.log("slidesData:", typeof slidesData);
-
-  
-  console.log(data)
+//
   return (
     <div className="wrapper-banner-home">
        

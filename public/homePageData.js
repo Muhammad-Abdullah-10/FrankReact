@@ -146,51 +146,42 @@ const homePageData = {
         ],
     },
 
-    managementSection: {
-    title: "How it Works ?",
-    steps: [
-      {
-        title: "Get in Touch",
-        description: "Reach out to Primolux to discuss your property and rental goals.",
-        icon: "src/assets/img/Group-487-1.svg"
-      },
-      {
-        title: "Contract Signed",
-        description: "Sign the contract and let us take care of everything from here.",
-        icon: "src/assets/img/Vector.svg"
-      },
-      {
-        title: "Initial Inspection",
-        description: "We conduct a thorough property inspection to assess its condition and readiness.",
-        icon: "src/assets/img/FrankPorter_step_2.svg"
-      },
-      {
-        title: "Interior Design",
-        description: "Our team enhances your property’s interiors to increase guest appeal.",
-        icon: "src/assets/img/Interior-design (1).svg"
-      },
-      {
-        title: "Maintenance Works",
-        description: "We handle any necessary repairs or upgrades to ensure your property is guest-ready.",
-        icon: "src/assets/img/FrankPorter_step_5.svg"
-      },
-      {
-        title: "Photography and Listing",
-        description: "Professional photos are taken, and your property is listed across top rental platforms.",
-        icon: "src/assets/img/listning-creation.svg"
-      },
-      {
-        title: "Guest Management + App Access",
-        description: "We manage guest bookings and provide you with real-time updates via our app.",
-        icon: "src/assets/img/pricing_request.svg"
-      },
-      {
-        title: "Relax and Count Your Dirhams",
-        description: "Sit back and enjoy the steady income from your rental property!",
-        icon: "src/assets/img/relax.svg"
-      }
-    ]
-  },
+   managementSection: {
+  title: "How it Works ?",
+  steps: [
+    {
+      title: "Management Support",
+      description:
+        "Primolux offers 24/7 management support, ensuring your property is well-maintained and guests receive top-tier service anytime.",
+      icon: "src/assets/img/FrankPorter_step_1.svg"
+    },
+    {
+      title: "Listing Management",
+      description:
+        "We optimize your property listings across major platforms to boost visibility, attract more bookings, and maximize occupancy.",
+      icon: "src/assets/img/FrankPorter_step_3.svg"
+    },
+    {
+      title: "Interior Design",
+      description:
+        "Our expert design team enhances your property’s appeal with stylish interiors that create a lasting impression on guests.",
+      icon: "src/assets/img/Interior-design (1).svg"
+    },
+    {
+      title: "Estimate Revenue",
+      description:
+        "We provide accurate revenue projections, helping you understand your property’s potential earnings and make informed investment decisions.",
+      icon: "src/assets/img/noun-interior-design-3879270-1.svg"
+    },
+    {
+      title: "Cleaning & Maintenance",
+      description:
+        "Primolux ensures your property is spotless and well-maintained between stays, providing guests with a clean, welcoming experience.",
+      icon: "src/assets/img/clean.svg"
+    }
+  ]
+},
+
 
   howItWorks: [
     {
