@@ -1,7 +1,7 @@
 import React from 'react'
 
 function LeftImageRightContent(props) {
-  console.log(props);
+  // console.log(props);
   return (
     <div className="wrapper-img-right my-[50px]">
         <div className="flex flex-col lg:flex-row w-full h-auto ">
