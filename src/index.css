@@ -10,6 +10,9 @@
   
   --color-secondary: #8d7252;
   --color-blackButton: #2D2D2C;
+   --color-whiteButton: #ffffff;
+
+  --radius-5px: 5px; 
 
   --font-lato: "Lato", sans-serif;
   --font-futuraLight: "FuturaLight", sans-serif;

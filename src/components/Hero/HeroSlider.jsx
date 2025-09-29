@@ -4,17 +4,24 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import {  Pagination, } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import BlackButton from '../Elements/BlackButton';
+import SliderButton from '../Elements/SliderButton';
 
 function HeroSlider() {
-  const [data , setData] = useState();
+ const [data, setData] = useState(null);
+const [slidesData, setSlidesData] = useState([]);
 
-  useEffect(() => {
-    setData(homePageData.heroSection);
-  }, [homePageData])
+useEffect(() => {
+  if (homePageData?.heroSection) {
+    setData(homePageData.heroSection);        
+    setSlidesData(homePageData.heroSection.slides); 
+  }
+}, [homePageData]);
 
-  const {buttons} = homePageData;
-  console.log( homePageData.slides)
+// console.log("data:", typeof data);          
+// console.log("slidesData:", typeof slidesData);
+
+  
+  console.log(data)
   return (
     <div className="wrapper-banner-home">
        
@@ -25,7 +32,30 @@ function HeroSlider() {
         slidesPerView={1}
         pagination={{ clickable: true }}
         >
+      {slidesData.map(({title , subtitle , bannerImg , buttons}, index) => {
+        // return (
+        //   console.log(title , subtitle , bannerImg, buttons[0],  index)
+        // )
+        return(
           <SwiperSlide className="swiper-slide">
+            <div className="wrapper-slide" style={{background: `url(${bannerImg})`, backgroundSize: "cover"}}>
+              <div className="slide-data">
+                  <h2 className="heading-wrapper font-futuraNormal">{ title}</h2>
+                    <h3 className="desc-wrapper">
+                      {subtitle}
+                    </h3>
+                    <div className="wrapper-button flex flex-col sm:flex-row  max-w-[100%] md:max-w-[80%] md:mx-auto lg:mx-0  lg:max-w-[50%] md:mt-[20px]">
+                      <SliderButton text={buttons[0].text}  link={buttons[0].link} style={buttons[0].style}/>
+                      <SliderButton text={buttons[1].text}  link={buttons[1].link} style={buttons[1].style}/>
+                     
+                    </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        )
+      })}
+
+          {/* <SwiperSlide className="swiper-slide">
             <div className="wrapper-slide" style={{background: "url('../src/assets/img/FrankPorter_main_baner_1.jpeg')", backgroundSize: "cover"}}>
               <div className="slide-data">
                   <h2 className="heading-wrapper font-futuraNormal">Airbnb
@@ -98,7 +128,7 @@ function HeroSlider() {
                     </div>
               </div>
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
         </div>
         <div className="swiper-pagination"></div>
