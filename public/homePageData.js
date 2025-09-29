@@ -111,13 +111,13 @@ const homePageData = {
     dataImageContent: {
         leftSections: [
         {
-            id: 1,
+            id: "L1",
             title: "Short Let Management",
             text: "At Primolux, we handle every detail of your short-term rental, from guest bookings and marketing to maintenance and cleaning. Maximize your property’s earning potential with our seamless, hassle-free management services tailored to meet your needs.",
             imgUrl: "src/assets/img/apartment-dining-room.jpeg",
         },
         {
-            id: 2,
+            id: "L2",
             title: "We list your property on multiple hosting platform",
             text: "At Primolux, we ensure your property gets maximum exposure by listing it on the top short-term rental platforms, including Airbnb, Booking.com, and more. Our team optimizes your listings with professional photography, compelling descriptions, and competitive pricing strategies to attract high-quality guests. By reaching a broader audience, we enhance your property's visibility and boost occupancy rates, helping you achieve higher returns. We handle all the listing management details, from updates to calendar synchronization, ensuring a seamless experience across platforms, so you can enjoy stress-free earnings from your investment.",
             imgUrl: "src/assets/img//13_IMG_6481-HDR-Edit-1.png",
@@ -126,19 +126,19 @@ const homePageData = {
 
         rightSections: [
         {
-            id: 1,
+            id: "R1",
             title: "About PrimoLux",
             text: "At Primolux, we specialize in providing comprehensive property management services designed to maximize your investment returns. Whether you're a homeowner or investor, our team of experts handles every aspect of short-term rentals, from guest bookings and marketing to property maintenance and cleaning. We aim to offer a seamless experience for both property owners and guests, ensuring top-notch service and hassle-free management. With a focus on enhancing property visibility and optimizing occupancy rates, Primolux is your trusted partner in elevating the potential of your real estate assets.",
             imgUrl: "src/assets/img/IMG_5197.jpeg",
         },
         {
-            id: 2,
+            id: "R2",
             title: "Short term rental Dubai: The facts and figures",
             text: "Dubai’s short-term rental market is booming, offering significant returns for property owners. With millions of tourists visiting annually, short-term rentals provide a lucrative opportunity, often yielding higher returns compared to traditional leasing. The average occupancy rate for short-term rentals in Dubai remains high, especially in prime locations like Downtown, Marina, and Palm Jumeirah. Property owners can expect occupancy rates between 70-90%, with average nightly rates fluctuating depending on seasonality and location. As Dubai continues to grow as a global destination, short-term rentals are becoming a preferred choice for maximizing real estate investment income.",
             imgUrl: "src/assets/img/02_1L1A1062-HDR_OK-min.jpeg",
         },
         {
-            id: 3,
+            id: "R3",
             title: "Vacation Rental Management",
             text: "Primolux offers end-to-end vacation rental management services, ensuring your property is always guest-ready. From professional marketing and guest communication to cleaning and maintenance, we provide a stress-free experience while maximizing your rental income and occupancy rates.",
             imgUrl: "src/assets/img/table_flower.png",
