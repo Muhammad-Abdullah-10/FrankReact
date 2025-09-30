@@ -58,19 +58,19 @@ function App() {
       <ManagementSupport title={managementSection.title} steps={managementSection.steps} />
       <HowItWorks />
 
+      <LeftImageRightContent
+        key={leftData[2]?.id}
+        id={leftData[2]?.id}
+        title={leftData[2]?.title}
+        text={leftData[2]?.text}
+        imgUrl={leftData[2]?.imgUrl}
+      />
       <RightContentLeftImage
         key={rightData[1]?.id}
         id={rightData[1]?.id}
         title={rightData[1]?.title}
         text={rightData[1]?.text}
         imgUrl={rightData[1]?.imgUrl}
-      />
-      <RightContentLeftImage
-        key={rightData[2]?.id}
-        id={rightData[2]?.id}
-        title={rightData[2]?.title}
-        text={rightData[2]?.text}
-        imgUrl={rightData[2]?.imgUrl}
       />
       <Footer />
     </>

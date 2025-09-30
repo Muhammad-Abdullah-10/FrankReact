@@ -122,6 +122,12 @@ const homePageData = {
             text: "At Primolux, we ensure your property gets maximum exposure by listing it on the top short-term rental platforms, including Airbnb, Booking.com, and more. Our team optimizes your listings with professional photography, compelling descriptions, and competitive pricing strategies to attract high-quality guests. By reaching a broader audience, we enhance your property's visibility and boost occupancy rates, helping you achieve higher returns. We handle all the listing management details, from updates to calendar synchronization, ensuring a seamless experience across platforms, so you can enjoy stress-free earnings from your investment.",
             imgUrl: "src/assets/img//13_IMG_6481-HDR-Edit-1.png",
         },
+        {
+            id: "L3",
+            title: "Short term rental Dubai: The facts and figures",
+            text: "Dubai’s short-term rental market is booming, offering significant returns for property owners. With millions of tourists visiting annually, short-term rentals provide a lucrative opportunity, often yielding higher returns compared to traditional leasing. The average occupancy rate for short-term rentals in Dubai remains high, especially in prime locations like Downtown, Marina, and Palm Jumeirah. Property owners can expect occupancy rates between 70-90%, with average nightly rates fluctuating depending on seasonality and location. As Dubai continues to grow as a global destination, short-term rentals are becoming a preferred choice for maximizing real estate investment income.",
+            imgUrl: "src/assets/img/02_1L1A1062-HDR_OK-min.jpeg",
+        },
         ],
 
         rightSections: [
@@ -133,12 +139,6 @@ const homePageData = {
         },
         {
             id: "R2",
-            title: "Short term rental Dubai: The facts and figures",
-            text: "Dubai’s short-term rental market is booming, offering significant returns for property owners. With millions of tourists visiting annually, short-term rentals provide a lucrative opportunity, often yielding higher returns compared to traditional leasing. The average occupancy rate for short-term rentals in Dubai remains high, especially in prime locations like Downtown, Marina, and Palm Jumeirah. Property owners can expect occupancy rates between 70-90%, with average nightly rates fluctuating depending on seasonality and location. As Dubai continues to grow as a global destination, short-term rentals are becoming a preferred choice for maximizing real estate investment income.",
-            imgUrl: "src/assets/img/02_1L1A1062-HDR_OK-min.jpeg",
-        },
-        {
-            id: "R3",
             title: "Vacation Rental Management",
             text: "Primolux offers end-to-end vacation rental management services, ensuring your property is always guest-ready. From professional marketing and guest communication to cleaning and maintenance, we provide a stress-free experience while maximizing your rental income and occupancy rates.",
             imgUrl: "src/assets/img/table_flower.png",
