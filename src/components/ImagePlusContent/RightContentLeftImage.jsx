@@ -1,7 +1,6 @@
 import React from 'react'
 
 function RightContentLeftImage({id , title , text , imgUrl}) {
-  console.log(id);
   return (
     
   <div className="wrapper-img-left my-[50px]" style={{background :  id === "R1" && '#F4F2F1' }}>

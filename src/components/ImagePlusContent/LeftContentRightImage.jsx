@@ -1,7 +1,6 @@
 import React from 'react'
 
 function LeftImageRightContent({id , title , text , imgUrl}) {
-  console.log(id)
   return (
     <div className="wrapper-img-right my-[50px]" >
         <div className="flex flex-col lg:flex-row w-full h-auto " style={{background :  id == "L1" || id == "L3"   ? '#F4F2F1' : 'white'}}>
