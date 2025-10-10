@@ -1,10 +1,13 @@
-import React ,  {useState} from 'react'
+import React ,  {useContext, useState} from 'react'
+import PropertyContext from '../../context/PropertyContext';
 
 function PropertyCard() {
-    const [propretyDetails, setPropertyDetails] = useState(false);
+    const [propretyDetailsShowBtn, setPropretyDetailsShowBtn] = useState();
+    const data = useContext(PropertyContext)
+    // console.log(data);
 
     function handleProperty() {
-        setPropertyDetails(!propretyDetails);
+        setPropretyDetailsShowBtn(!propretyDetailsShowBtn);
     }
 
   return (
@@ -60,7 +63,7 @@ function PropertyCard() {
               </div>
               <div
                 className={`flex flex-col justify-between py-2.5 ${
-                  propretyDetails ? "" : "hidden"
+                  propretyDetailsShowBtn ? "" : "hidden"
                 }`}
               >
                 <div className="flex flex-row justify-between flex-wrap my-[10px]">
