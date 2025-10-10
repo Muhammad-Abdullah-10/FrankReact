@@ -6,7 +6,6 @@ function PropertyListing() {
 
   function handleProperty() {
     setPropertyDetails(!propretyDetails);
-    console.log(propretyDetails);
   }
 
   return (
