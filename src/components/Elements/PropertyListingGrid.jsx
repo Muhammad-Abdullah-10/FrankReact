@@ -17,7 +17,7 @@ function PropertyListingGrid() {
     <div className="wrapper-property-cards">
       <div className="grid grid-cols-1 md:grid-cols-2 xl:px-5 xl:grid-cols-3 3xl:grid-cols-3 2xl:max-w-3/4 2xl:mx-auto gap-8">
         {propertyList.map((item) => (
-          <PropertyCard key={item.id} property={item} />
+          <PropertyCard key={item.key} id={item.id} property={item} />
         ))}
       </div>
     </div>

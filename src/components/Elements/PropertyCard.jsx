@@ -1,11 +1,7 @@
-import React ,  {useContext, useState} from 'react'
-import PropertyContext from '../../context/PropertyContext';
+import React ,  {useState} from 'react'
 
-function PropertyCard() {
-    const [propretyDetailsShowBtn, setPropretyDetailsShowBtn] = useState();
-    const data = useContext(PropertyContext)
-    // console.log(data);
-
+function PropertyCard({property}) {
+    const [propretyDetailsShowBtn, setPropretyDetailsShowBtn] = useState(false);
     function handleProperty() {
         setPropretyDetailsShowBtn(!propretyDetailsShowBtn);
     }
@@ -23,21 +19,18 @@ function PropertyCard() {
               <div className="flex flex-row justify-between py-[10px]">
                 <div className="card-title w-3/4 flex flex-col items-start">
                   <h3 className="card-title-wrapper font-futuraLight text-[20px] font-[600]">
-                    Impressive 5BR Townhouse w/ Own Backyard in La Mer
+                    {property.title}
                   </h3>
                   <h4 className="guestAndRooms-wrapper py-[10px] font-futuraLight font-[600] text-[18px] text-gray-500">
-                    11 guests | 5 bedrooms
+                    {property.guests}| {property.bedrooms}
                   </h4>
                 </div>
                 <div className="card-price w-[25%] flex flex-col items-end">
                   <h3 className="font-futuraLight text-[30px]  text-secondary">
-                    4999{" "}
-                    <span className="font-futuraLight text-[22px] font-[100]">
-                      د.إ
-                    </span>
+                    {property.price}
                   </h3>
                   <h4 className="night-wrapper relative font-futuraLight text-[20px]">
-                    night
+                    {property.rate_type}
                     <span className="h-[2px] w-full absolute bottom-0 left-0 bg-secondary"></span>
                   </h4>
                 </div>
@@ -70,7 +63,7 @@ function PropertyCard() {
                   <div className="flex flex-col ">
                     <label
                       htmlFor="checkin-card"
-                      className="font-futuraNormal text-[14px] font-[700] text-secondary"
+                      className="font-futuraLight text-[14px] font-[700] text-secondary"
                     >
                       Check In
                     </label>
@@ -78,13 +71,13 @@ function PropertyCard() {
                       type="date"
                       name="checkin-card"
                       id="checkin-card"
-                      className="border-[2px] border-[#8d7252] px-[10px] text-secondary font-futuraNormal font-[600]"
+                      className="border-[2px] border-[#8d7252] px-[10px] text-secondary font-futuraLight font-[600]"
                     />
                   </div>
                   <div className="flex flex-col ">
                     <label
                       htmlFor="checkout-card"
-                      className="font-futuraNormal text-[14px] font-[700] text-secondary"
+                      className="font-futuraLight text-[14px] font-[700] text-secondary"
                     >
                       Check Out
                     </label>
@@ -92,22 +85,22 @@ function PropertyCard() {
                       type="date"
                       name="checkin-card"
                       id="checkin-card"
-                      className="border-[2px] border-[#8d7252] px-[10px] text-secondary font-futuraNormal font-[600]"
+                      className="border-[2px] border-[#8d7252] px-[10px] text-secondary font-futuraLight font-[600]"
                     />
                   </div>
                 </div>
                 <select
                   name="card-guest"
                   id="card-guest"
-                  className="border-[2px] border-[#8d7252] px-[10px] py-[5px] text-secondary font-futuraNormal font-[600]"
+                  className="border-[2px] border-[#8d7252] px-[10px] py-[5px] text-secondary font-futuraLight font-[600]"
                 >
                   <option hidden disabled>
                     No of Guest
                   </option>
-                  <option className="font-futuraNormal text-[16px]" value="1">
+                  <option className="font-futuraLight text-[16px]" value="1">
                     1
                   </option>
-                  <option className="font-futuraNormal text-[16px]" value="2">
+                  <option className="font-futuraLight text-[16px]" value="2">
                     2
                   </option>
                 </select>
