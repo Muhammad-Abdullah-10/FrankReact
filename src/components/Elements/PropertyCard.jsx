@@ -90,7 +90,7 @@ function calculateRent(ci, co, g) {
             className="uppercase font-futuraNormal text-secondary text-[16px] font-extrabold"
           >
             {propretyDetailsShowBtn ? "Hide" : "More"}{" "}
-            <i className="fa fa-caret-right" aria-hidden="true"></i>
+            <i className={`duration-300 ease-in-out fa ${propretyDetailsShowBtn ? "fa-caret-down" : "fa-caret-right" }`} aria-hidden="true"></i>
           </button>
 
           <a
