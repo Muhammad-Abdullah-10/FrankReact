@@ -41,7 +41,7 @@ function calculateRent(ci, co, g) {
     return () => clearTimeout(timeoutRef.current);
   }, [checkIn, checkOut, guests]);
 
-  // 🧩 Handlers
+  //  Handlers
   const handleCheckIn = (e) => setCheckIn(e.target.value);
   const handleCheckOut = (e) => setCheckOut(e.target.value);
   const handleGuests = (e) => setGuests(parseInt(e.target.value));
@@ -51,7 +51,7 @@ function calculateRent(ci, co, g) {
   };
 
   return (
-    <div className="property-card-wrapper flex flex-col h-12/12 max-w-[90%] md:max-w-[430px] my-[10px] md:my-[20px]">
+    <div className="property-card-wrapper flex flex-col h-12/12 max-w-[90%] md:max-w-[430px] my-2.5 md:my-[20px]">
       {/* Property Image */}
       <div className="wrapper-aera-img relative">
         <img
@@ -107,7 +107,7 @@ function calculateRent(ci, co, g) {
             propretyDetailsShowBtn ? "" : "hidden"
           }`}
         >
-          <div className="flex flex-row justify-between flex-wrap my-[10px]">
+          <div className="flex flex-row justify-between flex-wrap my-2.5">
             {/* Check-In */}
             <div className="flex flex-col">
               <label
