@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function PropertyCard({ property }) {
   const [propretyDetailsShowBtn, setPropretyDetailsShowBtn] = useState(false);
@@ -92,13 +93,11 @@ function calculateRent(ci, co, g) {
             {propretyDetailsShowBtn ? "Hide" : "More"}{" "}
             <i className={`duration-300 ease-in-out fa ${propretyDetailsShowBtn ? "fa-caret-down" : "fa-caret-right" }`} aria-hidden="true"></i>
           </button>
-
-          <a
-            href="single_booknow.html"
-            className="tracking-[2px] font-futuraLight uppercase text-[16px] text-white bg-secondary font-[600] py-[7px] px-[30px] rounded"
+          <Link to={`property/${property.id}`}
+          className="tracking-[2px] font-futuraLight uppercase text-[16px] text-white bg-secondary font-[600] py-[7px] px-[30px] rounded"
           >
-            Details
-          </a>
+           Details
+          </Link>
         </div>
 
         {/* Expandable Section */}

@@ -12,6 +12,7 @@ import Root from "./Root.jsx";
 import PropertyListing from "./pages/PropertyListing/PropertyListing.jsx";
 import Home from "./pages/Home/Home.jsx";
 import PropertyContextProvider from "./context/PropertyContextProvider.jsx";
+import PropertyDetails from "./pages/PropertyDetail/PropertyDetails.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +26,15 @@ const router = createBrowserRouter(
           </PropertyContextProvider>
         }
       />
+      <Route
+        path="propertylisting/property/:id"
+        element={
+          <PropertyContextProvider>
+            <PropertyDetails />
+          </PropertyContextProvider>
+        }
+      />
+
     </Route>
   )
 );
