@@ -19,7 +19,7 @@ const propertyListingData = {
       "bedrooms": "3 bedrooms",
       "price": "2499 د.إ",
       "rate_type": "night",
-      "image": "../../src/assets/img/sea-view-apartment.jpg",
+      "image": "../../src/assets/img/pgztpe38rmm9bnaz4akm.jpg",
       "details_link": "/property/2"
     },
     {
@@ -30,7 +30,7 @@ const propertyListingData = {
       "bedrooms": "2 bedrooms",
       "price": "1599 د.إ",
       "rate_type": "night",
-      "image": "../../src/assets/img/business-bay-loft.jpg",
+      "image": "../../src/assets/img/pgztpe38rmm9bnaz4akm.jpg",
       "details_link": "/property/3"
     },
     {
@@ -41,7 +41,7 @@ const propertyListingData = {
       "bedrooms": "1 bedroom",
       "price": "799 د.إ",
       "rate_type": "night",
-      "image": "../../src/assets/img/downtown-studio.jpg",
+      "image": "../../src/assets/img/pgztpe38rmm9bnaz4akm.jpg",
       "details_link": "/property/4"
     },
     {
@@ -52,7 +52,7 @@ const propertyListingData = {
       "bedrooms": "4 bedrooms",
       "price": "5999 د.إ",
       "rate_type": "night",
-      "image": "../../src/assets/img/palm-villa.jpg",
+      "image": "../../src/assets/img/pgztpe38rmm9bnaz4akm.jpg",
       "details_link": "/property/5"
     },
     {
@@ -63,7 +63,7 @@ const propertyListingData = {
       "bedrooms": "1 bedroom",
       "price": "1099 د.إ",
       "rate_type": "night",
-      "image": "../../src/assets/img/marina-apartment.jpg",
+      "image": "../../src/assets/img/pgztpe38rmm9bnaz4akm.jpg",
       "details_link": "/property/6"
     },
     {
@@ -74,7 +74,7 @@ const propertyListingData = {
       "bedrooms": "2 bedrooms",
       "price": "1799 د.إ",
       "rate_type": "night",
-      "image": "../../src/assets/img/downtown-boulevard.jpg",
+      "image": "../../src/assets/img/pgztpe38rmm9bnaz4akm.jpg",
       "details_link": "/property/7"
     },
     {
@@ -85,7 +85,7 @@ const propertyListingData = {
       "bedrooms": "4 bedrooms",
       "price": "8999 د.إ",
       "rate_type": "night",
-      "image": "../../src/assets/img/marina-penthouse.jpg",
+      "image": "../../src/assets/img/pgztpe38rmm9bnaz4akm.jpg",
       "details_link": "/property/8"
     },
     {
@@ -96,7 +96,7 @@ const propertyListingData = {
       "bedrooms": "3 bedrooms",
       "price": "2699 د.إ",
       "rate_type": "night",
-      "image": "../../src/assets/img/jbr-beachfront.jpg",
+      "image": "../../src/assets/img/pgztpe38rmm9bnaz4akm.jpg",
       "details_link": "/property/9"
     },
     {
@@ -107,7 +107,7 @@ const propertyListingData = {
       "bedrooms": "2 bedrooms",
       "price": "3199 د.إ",
       "rate_type": "night",
-      "image": "../../src/assets/img/fountain-views-suite.jpg",
+      "image": "../../src/assets/img/pgztpe38rmm9bnaz4akm.jpg",
       "details_link": "/property/10"
     },
     {
@@ -118,7 +118,7 @@ const propertyListingData = {
       "bedrooms": "3 bedrooms",
       "price": "1899 د.إ",
       "rate_type": "night",
-      "image": "../../src/assets/img/arabian-ranches-home.jpg",
+      "image": "../../src/assets/img/pgztpe38rmm9bnaz4akm.jpg",
       "details_link": "/property/11"
     },
     {
@@ -129,7 +129,7 @@ const propertyListingData = {
       "bedrooms": "4 bedrooms",
       "price": "6999 د.إ",
       "rate_type": "night",
-      "image": "../../src/assets/img/palm-beach-villa.jpg",
+      "image": "../../src/assets/img/pgztpe38rmm9bnaz4akm.jpg",
       "details_link": "/property/12"
     }
   ]
