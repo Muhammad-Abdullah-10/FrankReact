@@ -9,7 +9,7 @@ const propertyListingData = {
       "price": "4999 د.إ",
       "rate_type": "night",
       "image": "../../src/assets/img/pgztpe38rmm9bnaz4akm.jpg",
-      "details_link": "single_booknow.html"
+      "details_link": "/property/1"
     },
     {
       "id": 2,
@@ -20,7 +20,7 @@ const propertyListingData = {
       "price": "2499 د.إ",
       "rate_type": "night",
       "image": "../../src/assets/img/sea-view-apartment.jpg",
-      "details_link": "single_booknow.html"
+      "details_link": "/property/2"
     },
     {
       "id": 3,
@@ -31,7 +31,7 @@ const propertyListingData = {
       "price": "1599 د.إ",
       "rate_type": "night",
       "image": "../../src/assets/img/business-bay-loft.jpg",
-      "details_link": "single_booknow.html"
+      "details_link": "/property/3"
     },
     {
       "id": 4,
@@ -42,7 +42,7 @@ const propertyListingData = {
       "price": "799 د.إ",
       "rate_type": "night",
       "image": "../../src/assets/img/downtown-studio.jpg",
-      "details_link": "single_booknow.html"
+      "details_link": "/property/4"
     },
     {
       "id": 5,
@@ -53,7 +53,7 @@ const propertyListingData = {
       "price": "5999 د.إ",
       "rate_type": "night",
       "image": "../../src/assets/img/palm-villa.jpg",
-      "details_link": "single_booknow.html"
+      "details_link": "/property/5"
     },
     {
       "id": 6,
@@ -64,7 +64,7 @@ const propertyListingData = {
       "price": "1099 د.إ",
       "rate_type": "night",
       "image": "../../src/assets/img/marina-apartment.jpg",
-      "details_link": "single_booknow.html"
+      "details_link": "/property/6"
     },
     {
       "id": 7,
@@ -75,7 +75,7 @@ const propertyListingData = {
       "price": "1799 د.إ",
       "rate_type": "night",
       "image": "../../src/assets/img/downtown-boulevard.jpg",
-      "details_link": "single_booknow.html"
+      "details_link": "/property/7"
     },
     {
       "id": 8,
@@ -86,7 +86,7 @@ const propertyListingData = {
       "price": "8999 د.إ",
       "rate_type": "night",
       "image": "../../src/assets/img/marina-penthouse.jpg",
-      "details_link": "single_booknow.html"
+      "details_link": "/property/8"
     },
     {
       "id": 9,
@@ -97,7 +97,7 @@ const propertyListingData = {
       "price": "2699 د.إ",
       "rate_type": "night",
       "image": "../../src/assets/img/jbr-beachfront.jpg",
-      "details_link": "single_booknow.html"
+      "details_link": "/property/9"
     },
     {
       "id": 10,
@@ -108,7 +108,7 @@ const propertyListingData = {
       "price": "3199 د.إ",
       "rate_type": "night",
       "image": "../../src/assets/img/fountain-views-suite.jpg",
-      "details_link": "single_booknow.html"
+      "details_link": "/property/10"
     },
     {
       "id": 11,
@@ -119,7 +119,7 @@ const propertyListingData = {
       "price": "1899 د.إ",
       "rate_type": "night",
       "image": "../../src/assets/img/arabian-ranches-home.jpg",
-      "details_link": "single_booknow.html"
+      "details_link": "/property/11"
     },
     {
       "id": 12,
@@ -130,7 +130,7 @@ const propertyListingData = {
       "price": "6999 د.إ",
       "rate_type": "night",
       "image": "../../src/assets/img/palm-beach-villa.jpg",
-      "details_link": "single_booknow.html"
+      "details_link": "/property/12"
     }
   ]
 }
