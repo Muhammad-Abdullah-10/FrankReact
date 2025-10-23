@@ -58,7 +58,7 @@ function calculateRent(ci, co, g) {
   const handleDetailsClick = () => {
     const basePath = `/propertylisting/property/${property.id}`;
 
-    // agar user ne koi input diya hai, toh query string bana lo
+    // change user input into query string
     if (checkIn && checkOut && guests) {
       const params = new URLSearchParams({
         checkIn,
@@ -68,7 +68,7 @@ function calculateRent(ci, co, g) {
       }).toString();
       navigate(`${basePath}?${params}`);
     } else {
-      // warna simple redirect
+      // simple redirect
       navigate(basePath);
     }
   };
