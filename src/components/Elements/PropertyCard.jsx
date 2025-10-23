@@ -52,7 +52,7 @@ function calculateRent(ci, co, g) {
   };
 
   
-  // Inside your component:
+  // Dynamic Navigation with form values Using use navigate 
   const navigate = useNavigate();
 
   const handleDetailsClick = () => {
