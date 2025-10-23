@@ -29,7 +29,6 @@ function calculateRent(ci, co, g) {
   const base = parseFloat(property.price?.toString().replace(/[^\d.]/g, "")) || 0;
   const total = base * diffDays * (g || 1);
 
-  console.log("Base:", base, "Days:", diffDays, "Guests:", g, "Total:", total);
   setTotalRent(total);
 }
 
