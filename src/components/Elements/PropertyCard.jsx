@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate  } from "react-router-dom";
 
 function PropertyCard({ property }) {
   const [propretyDetailsShowBtn, setPropretyDetailsShowBtn] = useState(false);
@@ -51,6 +51,28 @@ function calculateRent(ci, co, g) {
     setPropretyDetailsShowBtn((prev) => !prev);
   };
 
+  
+  // Inside your component:
+  const navigate = useNavigate();
+
+  const handleDetailsClick = () => {
+    const basePath = `/propertylisting/property/${property.id}`;
+
+    // agar user ne koi input diya hai, toh query string bana lo
+    if (checkIn && checkOut && guests) {
+      const params = new URLSearchParams({
+        checkIn,
+        checkOut,
+        guests,
+        total: totalRent,
+      }).toString();
+      navigate(`${basePath}?${params}`);
+    } else {
+      // warna simple redirect
+      navigate(basePath);
+    }
+  };
+
   return (
     <div className="property-card-wrapper flex flex-col h-12/12 max-w-[90%] md:max-w-[430px] my-2.5 md:my-[20px]">
       {/* Property Image */}
@@ -93,11 +115,11 @@ function calculateRent(ci, co, g) {
             {propretyDetailsShowBtn ? "Hide" : "More"}{" "}
             <i className={`duration-300 ease-in-out fa ${propretyDetailsShowBtn ? "fa-caret-down" : "fa-caret-right" }`} aria-hidden="true"></i>
           </button>
-          <Link to={`property/${property.id}`}
+          <button onClick={handleDetailsClick}
           className="tracking-[2px] font-futuraLight uppercase text-[16px] text-white bg-secondary font-[600] py-[7px] px-[30px] rounded"
           >
            Details
-          </Link>
+          </button>
         </div>
 
         {/* Expandable Section */}
